@@ -1,4 +1,4 @@
-import { LitElement, css, html } from 'lit'
+/*import { LitElement, css, html } from 'lit'
 
 
 export class MyElement extends LitElement {
@@ -35,3 +35,4 @@ export class MyElement extends LitElement {
 }
 
 window.customElements.define('my-element', MyElement)
+*/

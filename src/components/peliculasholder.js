@@ -1,5 +1,4 @@
 import { LitElement } from "lit";
-import { MyElement } from "../js/my-element";
 
 
 export class peliculasporañodelanzamiento extends LitElement {
@@ -11,9 +10,9 @@ export class peliculasporañodelanzamiento extends LitElement {
         super();
         console.log('a');
         
-        this.dataCarrito = []
+        this.dataPeliculas = []
         
-        const carritoData = JSON.parse(localStorage.getItem('carrito')) || [];
+        const peliculasdata = JSON.parse(localStorage.getItem('carrito')) || [];
         this.dataCarrito = carritoData.map(item => ({
             imagen: item.imagen,
             nombre: item.nombre,
@@ -26,3 +25,5 @@ export class peliculasporañodelanzamiento extends LitElement {
 
 
 }
+
+window.customElements.define('añolanzamiento', MyElement)

@@ -1,14 +1,15 @@
 import { LitElement, css, html } from 'lit'
 
-import {  } from "module";
+import { peliculasdata,  
+    getvideotrailer, 
+    getphotoposter, 
+    getmoredetailsofparticularimDb, 
+    moviesources} from "../modules/consultas.js";
 
 export class contentData extends LitElement {
   static get properties() {
     return {
-
-      //docsHint: { type: String },
-
-      //count: { type: Number },
+        
     }
   }
 
@@ -20,7 +21,10 @@ export class contentData extends LitElement {
 
   render() {
     return html`
-
+    <div class="Pelicula">
+            <div class="imagen"></div>
+            <p id="añolanzamiento" class="añolanzamiento">Año de Lanzamiento</p>
+    </div>
     `
   }
 
@@ -31,6 +35,12 @@ export class contentData extends LitElement {
   static get styles() {
     return css`
     
+
+.imagen {
+	width: 200px;
+	background-color: red;
+	height: 300px;
+}
     `
   }
 }
