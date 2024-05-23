@@ -4,6 +4,13 @@ import viteLogo from '/vite.svg'
 
 import { contentData } from "./js/contentdata"
 
+import { peliculasdata,  
+    getvideotrailer, 
+    getphotoposter, 
+    getmoredetailsofparticularimDb, 
+    moviesources} from "./modules/consultas.js";
+
+    console.log(peliculasdata)
 
 /**
  * An example element.
@@ -28,9 +35,13 @@ export class MyElement extends LitElement {
 
   constructor() {
     super()
-    this.docsHint = 'Click on the Vite and Lit logos to learn more'
-    this.count = 0
+    this.year = []
+    this.description = []
+    this.title = []
+    this.actor = []
   }
+
+
 
   render() {
     return html`
@@ -104,7 +115,7 @@ export class MyElement extends LitElement {
         <div class="data">
           <div class="content-data">
             <div class="head">
-              <h3>Elige una opción para ver los datos de esta.</h3>
+              <h3>Filtración por fechas</h3>
             </div>
             <my-contentdata></my-contentdata>
             

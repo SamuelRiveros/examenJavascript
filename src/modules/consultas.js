@@ -7,6 +7,8 @@ export const peliculasdata = async() =>{
 }
 
 
+
+
 export const getvideotrailer = async() =>{
     let res = await fetch(`http://media.imdbot.workers.dev/tt5548032`)
     let data = await res.json();
