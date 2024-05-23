@@ -1,10 +1,9 @@
+// Se importan los jsons online de las apis
+
 export const peliculasdata = async() =>{
     let res = await fetch(`https://search.imdbot.workers.dev/?q=Niram`)
     let data = await res.json();
-
-    data.JSON.parse()
-    let dataparsed = JSON.parse(data);
-    console.log("dataparsed")
+    return data
 }
 
 
@@ -32,8 +31,4 @@ export const moviesources = async() =>{
     let res = await fetch(`https://justwatch.imdbot.workers.dev/?q=Niram&L=en_IN`)
     let data = await res.json();
     return data
-}
-
-export const peliculasdom()={
-
 }

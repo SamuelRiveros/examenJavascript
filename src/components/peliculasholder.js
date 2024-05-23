@@ -16,9 +16,7 @@ export class peliculasporañodelanzamiento extends LitElement {
         this.dataCarrito = carritoData.map(item => ({
             imagen: item.imagen,
             nombre: item.nombre,
-            cantidad: item.quantity,
-            precio: item.precio,
-            subtotal: item.quantity * item.precio
+            fecha: item.fecha,
         }));
     
     }
